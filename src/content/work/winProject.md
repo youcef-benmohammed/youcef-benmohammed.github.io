@@ -14,5 +14,5 @@ tags:
 <div style="text-align: justify">
   This project involved developing classification models to predict Italian wine grape varieties. It utilized R and KNIME for exploratory data analysis (EDA) and machine learning models to achieve accurate predictions. 
   <br><br>
-  <a href="https://youcef-benmohammed-wineml.netlify.app" target='_blank'>View Report</a>
+  <a href="https://youcef-benmohammed-wineml.netlify.app" target="_blank">View Report</a>
 </div>
