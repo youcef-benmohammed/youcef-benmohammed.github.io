@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # Branche source
+      - main
 
 jobs:
   deploy:
@@ -13,11 +13,13 @@ jobs:
     - name: Checkout source code
       uses: actions/checkout@v3
 
-    - name: Build project
-      run: npm install && npm run build  # Ajustez selon vos commandes de build
+    - name: Build Jekyll site
+      uses: actions/jekyll-build-pages@v1
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./dist  # Répertoire de build
+        publish_dir: ./_site
