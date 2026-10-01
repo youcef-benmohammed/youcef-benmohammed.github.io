@@ -5,6 +5,7 @@ img: /assets/deseq2-shiny.webp
 img_alt: Volcano and MA plots of the pasilla knock-down produced by the DESeq2 Shiny app
 description: |
   An R Shiny web application to run a complete bulk RNA-seq differential expression analysis with DESeq2, from raw counts to an HTML report, without writing code.
+order: 1
 tags:
   - R Shiny
   - DESeq2

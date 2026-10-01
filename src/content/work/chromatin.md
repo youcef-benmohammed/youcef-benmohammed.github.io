@@ -4,10 +4,11 @@ publishDate: 2023-05-12 00:00:00
 img: /assets/chromatine.webp
 img_alt: Mut-3D
 description: |
-
+  Tutored project at the Centre de Biologie Intégrative (Toulouse): ChIP-seq and Hi-C analysis to study how 3D genome folding relates to gene expression in C. elegans.
+order: 4
 tags:
-  - Chip-seq
-  - ATAC-seq
+  - ChIP-seq
+  - Hi-C
   - Chromatin
   - HicAggR
   - R

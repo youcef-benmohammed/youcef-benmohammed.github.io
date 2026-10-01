@@ -10,6 +10,10 @@ export const collections = {
 			tags: z.array(z.string()),
 			img: z.string(),
 			img_alt: z.string().optional(),
+			// 'bioinformatics' projects are featured; 'side' = data-science side projects
+			category: z.enum(['bioinformatics', 'side']).default('bioinformatics'),
+			// lower = shown first; projects without order fall back to date
+			order: z.number().optional(),
 		}),
 	}),
 };

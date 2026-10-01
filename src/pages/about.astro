@@ -7,7 +7,7 @@ import Hero from "../components/Hero.astro";
 
 <BaseLayout
   title="About | Youcef BEN MOHAMMED"
-  description="About Youcef BEN MOHAMMED"
+  description="Background, experience and skills of Youcef Ben Mohammed, bioinformatics engineer (NGS pipelines and transcriptomics)."
 >
   <div class="stack gap-20">
     <main class="wrapper about">
@@ -27,15 +27,38 @@ import Hero from "../components/Hero.astro";
         <h2 class="section-title">Background</h2>
         <div class="content">
           <p>
-            <div style="text-align: justify">
-              I work in bioinformatics and data analysis, focusing on
-              high-throughput genomic data such as RNA-seq, ATAC-seq, and
-              ChIP-seq. My role involves using statistical methods to understand
-              complex data and uncover important information.With a strong
-              background in programming and biology, I aim to support research
-              through data-driven insights and practical solutions.
-            </div>
+            I am a bioinformatics engineer specialised in NGS data analysis and
+            transcriptomics. I design and maintain reproducible analysis pipelines
+            for short-read and Nanopore long-read sequencing data, run them on
+            HPC clusters, and build tools (R Shiny apps, R Markdown reports) that
+            make the results usable by biologists.
           </p>
+          <p class="open">
+            Open to new opportunities in bioinformatics:
+            <a href="mailto:youcef.benmohammed@hotmail.com">get in touch</a>.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Experience</h2>
+        <div class="content stack gap-8">
+          <div>
+            <h3>Bioinformatics Engineer (Ingénieur d'études)</h3>
+            <p class="meta">IPS2 – Institute of Plant Sciences Paris-Saclay (Université Paris-Saclay, INRAE) · Feb 2025 – present</p>
+            <ul>
+              <li>Design and maintenance of Snakemake pipelines for RNA-seq analysis (Illumina short reads and Nanopore long reads) on a SLURM HPC cluster.</li>
+              <li>Transcript reconstruction, lncRNA identification and coding-potential prediction, differential expression and alternative splicing analyses in plant genomes.</li>
+              <li>Integration of large annotation and expression tables with DuckDB/Parquet; reproducible R Markdown reports for biologists.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Master's internship – Bioinformatics</h3>
+            <p class="meta">INSERM U1236, Rennes · Jan 2024 – Jun 2024</p>
+            <ul>
+              <li>Bulk RNA-seq deconvolution with a single-cell reference atlas in follicular lymphoma (BayesPrism, MuSiC), benchmarked on pseudo-bulk simulations. <a href="/work/deconvolution/">Project page</a></li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -43,18 +66,28 @@ import Hero from "../components/Hero.astro";
         <h2 class="section-title">Education</h2>
         <div class="content">
           <p>
-            MSc in Bioinformatics & Systems Biology – University of Toulouse -
-            France (2022-2024)
+            MSc in Bioinformatics &amp; Systems Biology – Université Toulouse III – Paul Sabatier, France (2022–2024)
           </p>
         </div>
       </section>
 
       <section>
-        <h2 class="section-title">Soft Skills</h2>
+        <h2 class="section-title">Technical skills</h2>
         <div class="content">
           <p>
-            Communication, Problem Solving, Team Collaboration, Project
-            Management.
+            <strong>Languages:</strong> R, Python, Bash ·
+            <strong>Workflows &amp; HPC:</strong> Snakemake, SLURM, conda, Docker, Git, GitHub Actions ·
+            <strong>Analyses:</strong> RNA-seq (DESeq2), long-read transcriptomics, lncRNA, ChIP-seq, scRNA-seq deconvolution ·
+            <strong>Data &amp; apps:</strong> DuckDB, Parquet, R Shiny, R Markdown
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Soft skills</h2>
+        <div class="content">
+          <p>
+            Communication with biologists, problem solving, team collaboration, project management.
           </p>
         </div>
       </section>
@@ -92,6 +125,35 @@ import Hero from "../components/Hero.astro";
 
   .content {
     grid-column: 2 / 4;
+  }
+
+  .content h3 {
+    font-size: var(--text-lg);
+    color: var(--gray-0);
+  }
+
+  .content .meta {
+    color: var(--gray-400);
+    font-size: var(--text-md);
+    margin-bottom: 0.5rem;
+  }
+
+  .content ul {
+    padding-left: 1.25rem;
+    list-style: disc;
+  }
+
+  .content li + li {
+    margin-top: 0.4rem;
+  }
+
+  .content p + p {
+    margin-top: 1rem;
+  }
+
+  .open {
+    font-weight: 600;
+    color: var(--gray-0);
   }
 
   .content :global(a) {

@@ -4,7 +4,8 @@ publishDate: 2023-03-08 00:00:00
 img: /assets/wine_project.webp
 img_alt: KNIME Workflow
 description: |
-
+  Exploratory analysis and classification models (R, KNIME) predicting Italian wine grape varieties.
+category: side
 tags:
   - R
   - Exploratory data analysis (EDA)
