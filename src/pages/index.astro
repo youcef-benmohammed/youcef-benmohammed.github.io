@@ -41,6 +41,9 @@ const projects = sortProjects(
             <Pill><Icon icon="list" size="1.33em" /> Transcriptomics </Pill>
             <Pill><Icon icon="terminal-window" size="1.33em" /> Snakemake · HPC </Pill>
           </div>
+          <a class="cv-link" href="/cv/Youcef-Ben-Mohammed-CV-EN.pdf" target="_blank" rel="noopener">
+            Download CV (PDF) <Icon icon="arrow-right" size="1.1em" />
+          </a>
         </Hero>
 
         <img
@@ -96,6 +99,23 @@ const projects = sortProjects(
 
   .roles {
     display: none;
+  }
+
+  .cv-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    padding: 0.6rem 1.4rem;
+    border-radius: 999rem;
+    background: var(--gradient-accent);
+    color: var(--accent-text-over);
+    font-weight: 600;
+    font-size: var(--text-md);
+    text-decoration: none;
+    align-self: center;
+    width: fit-content;
+    box-shadow: var(--shadow-sm);
   }
 
   .hero img {
