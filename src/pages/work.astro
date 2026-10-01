@@ -8,9 +8,11 @@ import PortfolioPreview from "../components/PortfolioPreview.astro";
 import Hero from "../components/Hero.astro";
 import Grid from "../components/Grid.astro";
 
-const projects = (await getCollection("work")).sort(
-  (a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf()
-);
+import { sortProjects } from "../utils/projects";
+
+const all = sortProjects(await getCollection("work"));
+const projects = all.filter((p) => p.data.category === "bioinformatics");
+const sideProjects = all.filter((p) => p.data.category === "side");
 ---
 
 <BaseLayout
@@ -21,7 +23,7 @@ const projects = (await getCollection("work")).sort(
     <main class="wrapper stack gap-8">
       <Hero
         title="My Projects"
-        tagline="See my most recent projects below to get an idea of my past experience."
+        tagline="Bioinformatics projects first, followed by earlier data-science side projects."
         align="start"
       />
       <Grid variant="offset">
@@ -33,7 +35,29 @@ const projects = (await getCollection("work")).sort(
           ))
         }
       </Grid>
+      {
+        sideProjects.length > 0 && (
+          <>
+          <h2 class="subsection">Data science side projects</h2>
+          <Grid variant="small">
+            {sideProjects.map((project) => (
+              <li>
+                <PortfolioPreview project={project} />
+              </li>
+            ))}
+          </Grid>
+          </>
+        )
+      }
     </main>
     <ContactCTA />
   </div>
 </BaseLayout>
+
+<style>
+  .subsection {
+    margin-top: 4rem;
+    font-size: var(--text-2xl);
+    color: var(--gray-0);
+  }
+</style>

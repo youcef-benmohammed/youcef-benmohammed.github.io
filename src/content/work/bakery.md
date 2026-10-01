@@ -4,7 +4,8 @@ publishDate: 2024-09-02 00:00:00
 img: /assets/bakery.webp
 img_alt: Bakery
 description: |
-
+  Streamlit dashboard exploring daily, hourly and weekly bakery sales trends and best/worst-selling products.
+category: side
 tags:
   - Streamlit
   - Python

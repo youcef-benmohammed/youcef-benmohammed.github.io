@@ -4,7 +4,8 @@ publishDate: 2024-09-02 00:00:00
 img: /assets/RNA-seq.webp
 img_alt: RNA-seq analysis
 description: |
-
+  Snakemake RNA-seq pipeline (pre-processing, read counting, DESeq2, KEGG enrichment) applied to the response of S. cerevisiae to H2S released by SPRC.
+order: 3
 tags:
   - Snakemake Workflow
   - DESeq2 Analysis
