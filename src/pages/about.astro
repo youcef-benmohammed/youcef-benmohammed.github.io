@@ -37,6 +37,9 @@ import Hero from "../components/Hero.astro";
             Open to new opportunities in bioinformatics:
             <a href="mailto:youcef.benmohammed@hotmail.com">get in touch</a>.
           </p>
+          <p>
+            <a class="cv-link" href="/cv/Youcef-Ben-Mohammed-CV-EN.pdf" target="_blank" rel="noopener">Download my CV (PDF, English)</a>
+          </p>
         </div>
       </section>
 
@@ -149,6 +152,16 @@ import Hero from "../components/Hero.astro";
 
   .content p + p {
     margin-top: 1rem;
+  }
+
+  .cv-link {
+    display: inline-block;
+    padding: 0.5rem 1.25rem;
+    border-radius: 999rem;
+    background: var(--gradient-accent);
+    color: var(--accent-text-over);
+    font-weight: 600;
+    text-decoration: none !important;
   }
 
   .open {

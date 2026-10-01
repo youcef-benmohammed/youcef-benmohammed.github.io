@@ -26,7 +26,7 @@ Bulk RNA-seq is cheap and widely available, but it mixes the signal of every cel
 - Evaluation on **pseudo-bulk simulations** with known proportions: impact of cell-population granularity, similarity between gene signatures, and computational cost.
 
 ### Stack
-R, BayesPrism, MuSiC, pseudo-bulk simulations.
+R, Seurat v5, BayesPrism, MuSiC, Bash, Git, Slurm.
 
 <br>
 <a href="https://drive.google.com/file/d/1KX-BhoecHBj5cF3oWybZut7Rr5us18UC/view?usp=sharing" target="_blank">Download the internship report (PDF)</a>
