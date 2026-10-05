@@ -3,7 +3,7 @@ title: Development of a deconvolution pipeline for bulk RNA-seq data for Follicu
 publishDate: 2024-06-28 00:00:00
 img: /assets/deconvolution.webp
 img_alt: Bulk RNA-seq deconvolution pipeline
-order: 2
+order: 3
 description: |
   Master's internship (INSERM U1236, Rennes): a pipeline estimating cell-type proportions in bulk RNA-seq of follicular lymphoma from a single-cell reference atlas.
 tags:
