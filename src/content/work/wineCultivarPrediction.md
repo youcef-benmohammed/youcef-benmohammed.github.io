@@ -2,7 +2,7 @@
 title: Wine Cultivar Prediction
 publishDate: 2023-10-02 00:00:00
 img: /assets/wineshiny.webp
-img_alt: Wine Prediction
+img_alt: Model tab of the Wine Cultivar Prediction app (held-out accuracy, confusion matrix, variable importance)
 description: |
   R Shiny app predicting wine cultivars from chemical properties with a Random Forest model.
 category: side
