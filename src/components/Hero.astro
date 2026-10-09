@@ -3,7 +3,7 @@ interface Props {
 	title: string;
 	tagline?: string;
 	align?: 'start' | 'center';
-	size?: 'md' | 'lg';
+	size?: 'sm' | 'md' | 'lg';
 }
 
 const { align = 'center', tagline, title, size = 'lg' } = Astro.props;
@@ -32,6 +32,12 @@ const { align = 'center', tagline, title, size = 'lg' } = Astro.props;
 	.title {
 		font-size: var(--text-3xl);
 		color: var(--gray-0);
+		overflow-wrap: break-word;
+	}
+
+	/* Long project titles: keep them to a few lines on phones */
+	.sm .title {
+		font-size: var(--text-2xl);
 	}
 
 	@media (min-width: 50em) {
@@ -46,6 +52,10 @@ const { align = 'center', tagline, title, size = 'lg' } = Astro.props;
 		.start .title,
 		.start .tagline {
 			margin-inline: unset;
+		}
+
+		.sm .title {
+			font-size: var(--text-4xl);
 		}
 
 		.title {

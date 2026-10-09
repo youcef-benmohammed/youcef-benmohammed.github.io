@@ -33,7 +33,7 @@ const { Content } = await entry.render();
       <header>
         <div class="wrapper stack gap-2">
           <a class="back-link" href="/work/"><Icon icon="arrow-left" /> Work</a>
-          <Hero title={entry.data.title} align="start">
+          <Hero title={entry.data.title} align="start" size="sm">
             <div class="details">
               <div class="tags">
                 {entry.data.tags.map((t) => <Pill>{t}</Pill>)}
@@ -79,8 +79,14 @@ const { Content } = await entry.render();
     align-items: center;
   }
 
+  .details > * {
+    max-width: 100%;
+  }
+
   .tags {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 0.5rem;
   }
 
@@ -155,6 +161,10 @@ const { Content } = await entry.render();
     .details {
       flex-direction: row;
       gap: 2.5rem;
+    }
+
+    .tags {
+      justify-content: flex-start;
     }
 
     .content :global(blockquote) {
