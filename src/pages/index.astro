@@ -42,12 +42,15 @@ const projects = sortProjects(
           </a>
         </Hero>
 
-        <img
-          alt="Youcef BEN MOHAMMED"
-          width="750"
-          height="1000"
-          src="/assets/portrait.webp"
-        />
+        <picture>
+          <source media="(max-width: 49.99em)" srcset="/assets/portrait-avatar.webp" width="480" height="480" />
+          <img
+            alt="Youcef BEN MOHAMMED"
+            width="750"
+            height="1000"
+            src="/assets/portrait.webp"
+          />
+        </picture>
       </header>
 
       <Skills />
@@ -115,14 +118,19 @@ const projects = sortProjects(
   }
 
   /* Mobile: compact round portrait above the name */
-  .hero img {
+  .hero picture {
+    display: block;
     order: -1;
+    margin-inline: auto;
+  }
+
+  .hero img {
     width: 11rem;
     height: 11rem;
     margin-inline: auto;
     aspect-ratio: 1;
     object-fit: cover;
-    object-position: 50% 28%;
+    object-position: 50% 50%;
     border-radius: 50%;
     box-shadow: var(--shadow-md);
   }
@@ -141,8 +149,12 @@ const projects = sortProjects(
       gap: 0.5rem;
     }
 
-    .hero img {
+    .hero picture {
       order: 0;
+      margin-inline: 0;
+    }
+
+    .hero img {
       width: 100%;
       height: auto;
       aspect-ratio: 3 / 4;
