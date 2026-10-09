@@ -44,10 +44,10 @@ const { Content } = await entry.render();
         </div>
       </header>
       <main class="wrapper">
-        <div class="stack gap-10 content">
+        <div class="stack gap-10">
           {
             entry.data.img && (
-              <img src={entry.data.img} alt={entry.data.img_alt || ""} />
+              <img class="cover" src={entry.data.img} alt={entry.data.img_alt || ""} />
             )
           }
           <div class="content">
@@ -90,8 +90,17 @@ const { Content } = await entry.render();
   }
 
   .content {
-    max-width: 65ch;
+    max-width: 70ch;
     margin-inline: auto;
+  }
+
+  .cover {
+    width: 100%;
+    max-width: 960px;
+    margin-inline: auto;
+    border-radius: 1.5rem;
+    border: 1px solid var(--gray-800);
+    box-shadow: var(--shadow-sm);
   }
 
   .content > :global(* + *) {

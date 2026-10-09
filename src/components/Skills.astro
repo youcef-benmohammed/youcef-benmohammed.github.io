@@ -9,12 +9,12 @@ import Icon from './Icon.astro';
 		<p>Reproducible Snakemake workflows on SLURM clusters, conda environments, Git. Short-read and Nanopore long-read data.</p>
 	</div>
 	<div class="stack gap-2 lg:gap-4">
-		<Icon icon="code" color="var(--accent-regular)" size="2.5rem" gradient />
+		<Icon icon="dna" color="var(--accent-regular)" size="2.5rem" gradient />
 		<h2>Transcriptomics</h2>
 		<p>RNA-seq differential expression (DESeq2), transcript and lncRNA identification, alternative splicing, ChIP-seq, scRNA-seq deconvolution.</p>
 	</div>
 	<div class="stack gap-2 lg:gap-4">
-		<Icon icon="strategy" color="var(--accent-regular)" size="2.5rem" gradient />
+		<Icon icon="chart-bar" color="var(--accent-regular)" size="2.5rem" gradient />
 		<h2>Data &amp; applications</h2>
 		<p>R, Python and Bash; DuckDB/Parquet for large tables; interactive R Shiny apps and R Markdown reports.</p>
 	</div>
@@ -37,10 +37,13 @@ import Icon from './Icon.astro';
 
 	.skills h2 {
 		font-size: var(--text-lg);
+		color: var(--gray-0);
 	}
 
 	.skills p {
-		color: var(--gray-400);
+		color: var(--gray-300);
+		font-size: var(--text-md);
+		line-height: 1.6;
 	}
 
 	@media (min-width: 50em) {
@@ -52,11 +55,11 @@ import Icon from './Icon.astro';
 		.skills {
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
-			gap: 5rem;
+			gap: 3.5rem;
 		}
 
 		.skills h2 {
-			font-size: var(--text-2xl);
+			font-size: var(--text-xl);
 		}
 	}
 </style>

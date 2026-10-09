@@ -13,7 +13,7 @@ tags:
   - Bioconductor
 ---
 
-<div style="text-align: justify">
+<div>
   <p>
     <a href="https://5lhxiz-youcef-ben0mohammed.shinyapps.io/deseq2-shiny/" target="_blank"><strong>▶ Open the live demo</strong></a>
     &nbsp;·&nbsp;
