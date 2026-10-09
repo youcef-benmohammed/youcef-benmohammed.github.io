@@ -2,7 +2,7 @@
 title: Reproducible RNA-seq Snakemake Workflow – S. cerevisiae Response to SPRC
 publishDate: 2024-09-02 00:00:00
 img: /assets/rnaseq-snakemake.webp
-img_alt: Rule graph of the Snakemake RNA-seq workflow and volcano plot from its test dataset
+img_alt: "Steps of the Snakemake RNA-seq workflow: reads, fastp, STAR, featureCounts, DESeq2, MultiQC"
 order: 2
 description: |
   A tested, portable Snakemake workflow (SRA → fastp → STAR → featureCounts → DESeq2 → MultiQC), applied to the response of yeast to H₂S released by S-propargyl-cysteine.
@@ -14,7 +14,7 @@ tags:
   - CI
 ---
 
-<div style="text-align: justify">
+<div>
   <p>
     <a href="https://github.com/youcef-benmohammed/rnaseq.analysis" target="_blank"><strong>View the workflow on GitHub</strong></a>
     &nbsp;·&nbsp;

@@ -2,7 +2,7 @@
 title: Bakery Sales Analysis App
 publishDate: 2024-09-02 00:00:00
 img: /assets/bakery.webp
-img_alt: Bakery
+img_alt: Hourly sales chart from the Bakery Sales Analysis Streamlit app
 description: |
   Streamlit dashboard exploring daily, hourly and weekly bakery sales trends and best/worst-selling products.
 category: side
@@ -12,7 +12,7 @@ tags:
   - Data Visualisation
 ---
 
-<div style="text-align: justify">
+<div>
   This project includes a Streamlit app designed to analyze bakery sales data. It provides valuable insights into daily, hourly, and weekly sales trends and highlights both the top-selling and least popular products.
   <br><br>
   <a href="https://bakerysales.streamlit.app/" target="_blank">Access Application</a>

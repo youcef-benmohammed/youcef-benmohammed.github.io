@@ -1,7 +1,7 @@
 ---
 title: Development of a deconvolution pipeline for bulk RNA-seq data for Follicular Lymphoma
 publishDate: 2024-06-28 00:00:00
-img: /assets/deconvolution.webp
+img: /assets/deconvolution-thumb.webp
 img_alt: Bulk RNA-seq deconvolution pipeline
 order: 3
 description: |
@@ -14,7 +14,7 @@ tags:
   - MuSiC
 ---
 
-<div style="text-align: justify">
+<div>
 
 ### Context
 Bulk RNA-seq is cheap and widely available, but it mixes the signal of every cell in a tumour sample. In follicular lymphoma, the composition of the tumour micro-environment matters, so estimating cell-type proportions from bulk data is valuable. This was the subject of my Master's internship at INSERM U1236 (Rennes, January–June 2024).

@@ -28,19 +28,15 @@ const projects = sortProjects(
 ---
 
 <BaseLayout>
-  <div class="stack gap-20 lg:gap-48">
+  <div class="stack gap-20 lg:gap-32">
     <div class="wrapper stack gap-8 lg:gap-20">
       <header class="hero">
         <Hero
-          title=""
+          title="Youcef Ben Mohammed"
+          size="md"
           tagline="Bioinformatics engineer specialised in NGS pipelines and transcriptomics. I build reproducible workflows and interactive tools that turn sequencing data into biological answers."
           align="center"
         >
-          <div class="roles">
-            <Pill><Icon icon="code" size="1.33em" /> NGS pipelines </Pill>
-            <Pill><Icon icon="list" size="1.33em" /> Transcriptomics </Pill>
-            <Pill><Icon icon="terminal-window" size="1.33em" /> Snakemake · HPC </Pill>
-          </div>
           <a class="cv-link" href="/cv/Youcef-Ben-Mohammed-CV-EN.pdf" target="_blank" rel="noopener">
             Download CV (PDF) <Icon icon="arrow-right" size="1.1em" />
           </a>
@@ -57,7 +53,7 @@ const projects = sortProjects(
       <Skills />
     </div>
 
-    <main class="wrapper stack gap-20 lg:gap-48">
+    <main class="wrapper stack gap-20 lg:gap-32">
       <section class="section with-background with-cta">
         <header class="section-header stack gap-2 lg:gap-4">
           <h3>Selected Projects</h3>
@@ -65,7 +61,7 @@ const projects = sortProjects(
         </header>
 
         <div class="gallery">
-          <Grid variant="offset">
+          <Grid>
             {
               projects.map((project) => (
                 <li>
@@ -121,7 +117,7 @@ const projects = sortProjects(
   .hero img {
     aspect-ratio: 5 / 4;
     object-fit: cover;
-    object-position: top;
+    object-position: 50% 30%;
     border-radius: 1.5rem;
     box-shadow: var(--shadow-md);
   }
