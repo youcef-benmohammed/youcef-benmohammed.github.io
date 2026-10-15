@@ -3,7 +3,7 @@ title: Reproducible RNA-seq Snakemake Workflow – S. cerevisiae Response to SPR
 publishDate: 2024-09-02 00:00:00
 img: /assets/rnaseq-snakemake.webp
 img_alt: "Steps of the Snakemake RNA-seq workflow: reads, fastp, STAR, featureCounts, DESeq2, MultiQC"
-order: 2
+order: 3
 description: |
   A tested, portable Snakemake workflow (SRA → fastp → STAR → featureCounts → DESeq2 → MultiQC), applied to the response of yeast to H₂S released by S-propargyl-cysteine.
 tags:
