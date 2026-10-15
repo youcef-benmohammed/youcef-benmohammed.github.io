@@ -2,7 +2,7 @@
 title: NanoIsoform – Isoform Analysis from Nanopore Long Reads
 publishDate: 2026-10-12 00:00:00
 img: /assets/nanoisoform.webp
-img_alt: Read-length distributions of the six Nanopore samples in the NanoIsoform report
+img_alt: "NanoIsoform workflow: flair align, transcriptome, combine and quantify, then DESeq2, DRIMSeq and diffSplice, summarised in an HTML report"
 order: 2
 description: |
   A Snakemake workflow built around FLAIR for isoform discovery, differential expression, isoform usage and splicing from Oxford Nanopore long reads, with one HTML report.
