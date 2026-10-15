@@ -5,7 +5,7 @@ img: /assets/chromatin-thumb.webp
 img_alt: "Levels of 3D genome organisation: chromatin loops, TADs, A/B compartments and nucleus"
 description: |
   Tutored project at the Centre de Biologie Intégrative (Toulouse): ChIP-seq and Hi-C analysis to study how 3D genome folding relates to gene expression in C. elegans.
-order: 4
+order: 5
 tags:
   - ChIP-seq
   - Hi-C
