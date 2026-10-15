@@ -11,8 +11,11 @@ import Grid from "../components/Grid.astro";
 import { sortProjects } from "../utils/projects";
 
 const all = sortProjects(await getCollection("work"));
-const projects = all.filter((p) => p.data.category === "bioinformatics");
-const sideProjects = all.filter((p) => p.data.category === "side");
+// Bioinformatics projects first, then side projects, all in one grid
+const projects = [
+  ...all.filter((p) => p.data.category === "bioinformatics"),
+  ...all.filter((p) => p.data.category === "side"),
+];
 ---
 
 <BaseLayout
@@ -34,26 +37,7 @@ const sideProjects = all.filter((p) => p.data.category === "side");
           ))
         }
       </Grid>
-      {
-        sideProjects.length > 0 && (
-          <div class="side">
-            <Grid variant="small">
-              {sideProjects.map((project) => (
-                <li>
-                  <PortfolioPreview project={project} />
-                </li>
-              ))}
-            </Grid>
-          </div>
-        )
-      }
     </main>
     <ContactCTA />
   </div>
 </BaseLayout>
-
-<style>
-  .side {
-    margin-top: 2rem;
-  }
-</style>
