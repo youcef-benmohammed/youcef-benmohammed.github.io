@@ -15,7 +15,7 @@ tags:
 ---
 
 <div>
-  This project realized during my tutored project at Center for Integrative Biology, this project involved analyzing ChIP-seq data to identify protein-binding sites and Hi-C data to map 3D DNA interactions in *C. elegans*. This work aimed to elucidate the impact of DNA folding on gene expression regulation.
+  Carried out as a tutored project at the Centre de Biologie Intégrative (Toulouse), this work analysed ChIP-seq data to identify protein-binding sites and Hi-C data to map 3D DNA interactions in *C. elegans*. The aim was to understand how DNA folding regulates gene expression.
 <br><br>
 <a href="https://drive.google.com/file/d/1oY29gUXPNtnJh7MWGSAMPY5t_vU6BmrD/view?usp=sharing">View Report</a>
 
