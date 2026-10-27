@@ -13,9 +13,23 @@ tags:
 ---
 
 <div>
-  This project includes a Shiny app that predicts wine cultivars using a pre-trained Random Forest model. The application is designed to take various chemical properties of wines as input and provides predictions based on these parameters. 
-  <br><br>
-  <a href="https://5lhxiz-youcef-ben0mohammed.shinyapps.io/wine_classification_shiny-main/" target="_blank">Access Application</a>
-  <br><br>
-  <a href="https://github.com/youcef-benmohammed/wine-classification-app" target="_blank">View code on GitHub</a>
+  <p>
+    <a href="https://5lhxiz-youcef-ben0mohammed.shinyapps.io/wine_classification_shiny-main/" target="_blank"><strong>▶ Open the live app</strong></a>
+    &nbsp;·&nbsp;
+    <a href="https://github.com/youcef-benmohammed/wine-classification-app" target="_blank">View code on GitHub</a>
+  </p>
+
+  <h3>What it does</h3>
+  <ul>
+    <li>Predicts the cultivar (Barolo, Grignolino, Barbera) of a wine from 13 chemical measurements (UCI Wine dataset, 178 wines).</li>
+    <li>Single prediction from a form, or batch prediction from a validated CSV file, with downloadable results.</li>
+    <li>Model tab: held-out accuracy, out-of-bag error, confusion matrix and variable importance.</li>
+  </ul>
+
+  <h3>Method</h3>
+  <ul>
+    <li>Stratified 70/30 split; random forest (500 trees) trained once with a fixed seed, so predictions are reproducible.</li>
+    <li>96.2 % accuracy on the 53 held-out wines, 1.6 % out-of-bag error.</li>
+    <li>Unit tests (testthat) in GitHub Actions; versioned releases generated from a changelog.</li>
+  </ul>
 </div>

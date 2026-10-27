@@ -1,27 +1,27 @@
-# Astro Starter Kit: Portfolio
+# youcef-benmohammed.github.io
 
-```sh
-npm create astro@latest -- --template portfolio
+Source of my portfolio: **https://youcef-benmohammed.github.io/**
+
+Built with [Astro](https://astro.build) and deployed to GitHub Pages by GitHub Actions on every push to `main`.
+
+## Run locally
+
+```bash
+npm ci
+npm run dev      # http://localhost:4321
+npm run build    # static site in dist/
 ```
 
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/portfolio)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/portfolio/devcontainer.json)
+## Structure
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+```
+src/
+├── content/work/   # one Markdown file per project page
+├── pages/          # home, projects, about
+└── components/     # layout and UI components
+public/
+├── assets/         # images
+└── cv/             # CV (PDF)
+```
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+To add a project, create a Markdown file in `src/content/work/` (fields defined in `src/content/config.ts`).
